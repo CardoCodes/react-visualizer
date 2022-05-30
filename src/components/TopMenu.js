@@ -12,7 +12,7 @@ import { MenuItem } from '@mui/material';
 
 const useStyles = makeStyles(theme => ({
   appBar: {
-    width: `calc(100%)`,
+    width: `100%`,
   },
   menuButton: {
     marginRight: 0,

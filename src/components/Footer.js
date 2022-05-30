@@ -8,19 +8,32 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
   appBar: {
-    width: `calc(100%)`,
+    width: `100%`,
+    top: 'auto',
+    bottom: 'fixed',
+  },
+  menuButton: {
+    marginRight: 0,
+  },
+  title: {
+    flexGrow: 1,
+  },
+  footer: {
     marginLeft: 20,
     fontSize: 17,
-    textAlign: 'center',
   },
 }));
 
 class Footer extends React.Component {
-  redner() {
+  render() {
     const {classes} = this.props;
 
     return (
-      <div>hello</div>
+      <AppBar position='fixed-bottom' className={classes.appBar} color='inherit'>
+        <Typography align='center' variant='h6' className={classes.footer}>
+         © Copyright 2022
+       </Typography>
+      </AppBar>
     );
   }
 }

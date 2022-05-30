@@ -16,6 +16,8 @@ componentDidMount() {
     return(
       <React.Fragment>
         <TopMenu/>
+        <MainContent/>
+        <Footer/>
       </React.Fragment>
     );
   }

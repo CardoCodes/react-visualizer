@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 import Home from './pages/home';
-import Footer from './components/Footer';
 
 class App extends Component{
 
