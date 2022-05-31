@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
+import MediaCard from './Cards';
 
 const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
@@ -13,8 +14,9 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     padding: theme.spacing(3),
   },
-  fullWidth: {
+  fullSize: {
     width: '100%',
+    height: '100%',
   },
 }));
 
@@ -22,17 +24,9 @@ function MainContent() {
   const classes = useStyles();
 
   return (
-    <main className={classes.fullWidth}>
+    <main className={classes.fullSize}>
       <div className={classes.toolbar} />
-      <div className={classes.title}>
-        <Typography variant='h6'>Title</Typography>
-      </div>
       <div className={classes.content}>
-        <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus,
-          nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem
-          felis nec erat
-        </Typography>
       </div>
     </main>
   );
