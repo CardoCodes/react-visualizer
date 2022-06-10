@@ -9,8 +9,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles(theme => ({
   appBar: {
     width: `100%`,
-    top: 'auto',
-    bottom: 'fixed',
+    bottom: '0',
   },
   menuButton: {
     marginRight: 0,
@@ -29,7 +28,7 @@ class Footer extends React.Component {
     const {classes} = this.props;
 
     return (
-      <AppBar position='fixed-bottom' className={classes.appBar} color='inherit'>
+      <AppBar position='fixed-bottoms' className={classes.appBar} color='inherit'>
         <Typography align='center' variant='h6' className={classes.footer}>
          © Copyright 2022
        </Typography>
