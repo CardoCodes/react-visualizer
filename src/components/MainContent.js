@@ -25,8 +25,9 @@ function MainContent() {
 
   return (
     <main className={classes.fullSize}>
-      <div className={classes.toolbar} />
+      <div className={classes.toolbar}/>
       <div className={classes.content}>
+        <MediaCard/>
       </div>
     </main>
   );
