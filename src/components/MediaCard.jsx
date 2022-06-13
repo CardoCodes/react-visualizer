@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 5,
         '&:hover': {
             boxShadow: `0 6px 12px 0 #000000
-                .rotate(-12)
-                .darken(0.2)
+                .rotate(-6)
+                .darken(0.9)
                 .fade(0.5)}`
                 ,
         },
@@ -44,10 +44,11 @@ const useStyles = makeStyles((theme) => ({
         transform: 'rotate(180deg)',
     },
     actionArea: {
-        padding:15,
-        transition: '0.2s',
+        padding: 15,
+        display: 'flex',
+        transition: '0.4s',
         '&:hover': {
-            transform: 'scale(1.1)',
+            transform: 'scale(1.05)',
 
         },
     },

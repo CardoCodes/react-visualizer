@@ -26,7 +26,6 @@ const useStyles = makeStyles(theme => ({
 class Footer extends React.Component {
   render() {
     const {classes} = this.props;
-
     return (
       <AppBar position='fixed-bottoms' className={classes.appBar} color='inherit'>
         <Typography align='center' variant='h6' className={classes.footer}>

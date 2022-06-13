@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
-import MediaCard from './Cards';
+import Cards from './Cards';
 
 const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
@@ -12,7 +12,6 @@ const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
   },
   fullSize: {
     width: '100%',
@@ -26,8 +25,8 @@ function MainContent() {
   return (
     <main className={classes.fullSize}>
       <div className={classes.toolbar}/>
-      <div className={classes.content}>
-        <MediaCard/>
+      <div className={classes.content} >
+        <Cards />
       </div>
     </main>
   );
