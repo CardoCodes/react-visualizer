@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import TopMenu from '../components/TopMenu';
 import Footer from '../components/Footer';
@@ -14,11 +14,11 @@ componentDidMount() {
 }
   render(){
     return(
-      <React.Fragment>
+      <Fragment>
         <TopMenu/>
         <MainContent/>
         <Footer/>
-      </React.Fragment>
+      </Fragment>
     );
   }
 }
