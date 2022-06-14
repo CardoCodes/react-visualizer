@@ -1,6 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import TopMenu from '../homeComponents/TopMenu';
 import Footer from '../homeComponents/Footer';
+import Grid from '../pathComponents/Grid';
+
 class Pathfinder extends Component{
     constructor(){
         super();
@@ -12,9 +14,8 @@ class Pathfinder extends Component{
     render(){
         return(
             <Fragment>
-                <TopMenu>
-                    <Footer/>
-                </TopMenu>
+
+                <Grid />
             </Fragment>
         );
     }
