@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 
-import TopMenu from '../components/TopMenu';
-import Footer from '../components/Footer';
-import MainContent from '../components/MainContent';
+import TopMenu from '../homeComponents/TopMenu';
+import Footer from '../homeComponents/Footer';
+import MainContent from '../homeComponents/MainContent';
 
 
 class Home extends Component{

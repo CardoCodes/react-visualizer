@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
-import TopMenu from '../components/TopMenu';
-import Footer from '../components/Footer';
+import TopMenu from '../homeComponents/TopMenu';
+import Footer from '../homeComponents/Footer';
 class Pathfinder extends Component{
     constructor(){
         super();
